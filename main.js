@@ -81,7 +81,7 @@ async function displayBotMessage(message) {
   const messageElement = createMessageElement('', 'bot');
   chatArea.appendChild(messageElement);
 
-  const typingDelay = 50; // Delay between each character being displayed
+  const typingDelay = 20; // Delay between each character being displayed
 
   for (let i = 0; i < message.length; i++) {
     await new Promise(resolve => setTimeout(resolve, typingDelay));
